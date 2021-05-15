@@ -14,11 +14,11 @@ export default function Page() {
         <meta name="keywords" content="" />
       </Head>
 
-      <Link href="/stati">
-        <a>stati</a>
+      <Link href="/katalog">
+        <a>katalog</a>
       </Link>
       <br />
-      <a href="/stati">stati</a>
+      <a href="/katalog">katalog</a>
     </>
   );
 }

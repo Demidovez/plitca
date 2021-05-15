@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 // import style from "../styles/Index.module.scss";
 
 export default function Page() {
@@ -14,11 +13,7 @@ export default function Page() {
         <meta name="keywords" content="" />
       </Head>
 
-      <Link href="/stati">
-        <a>stati</a>
-      </Link>
-      <br />
-      <a href="/stati">stati</a>
+      <div>katalog</div>
     </>
   );
 }

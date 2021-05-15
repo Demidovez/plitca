@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1000,
+    "page_id": 1,
+    "children": []
+  },
+  {
+    "id": 2000,
+    "page_id": null,
+    "label": "Услуги",
+    "children": [
+      {
+        "id": 3000,
+        "page_id": 2
+      },
+      {
+        "id": 4000,
+        "page_id": 3
+      },
+      {
+        "id": 5000,
+        "page_id": 4
+      },
+      {
+        "id": 6000,
+        "page_id": 5
+      }
+    ]
+  },
+  {
+    "id": 7000,
+    "page_id": null,
+    "label": "Покупателям",
+    "children": [
+      {
+        "id": 8000,
+        "page_id": 6
+      },
+      {
+        "id": 9000,
+        "page_id": 7
+      },
+      {
+        "id": 10000,
+        "page_id": 8
+      },
+      {
+        "id": 11000,
+        "page_id": 9
+      },
+      {
+        "id": 12000,
+        "page_id": 10
+      },
+      {
+        "id": 13000,
+        "page_id": 11
+      },
+      {
+        "id": 14000,
+        "page_id": 12
+      },
+      {
+        "id": 15000,
+        "page_id": 13
+      },
+      {
+        "id": 16000,
+        "page_id": 14
+      }
+    ]
+  },
+  {
+    "id": 17000,
+    "page_id": 15,
+    "children": []
+  },
+  {
+    "id": 18000,
+    "page_id": 16,
+    "children": []
+  },
+  {
+    "id": 19000,
+    "page_id": 17,
+    "children": []
+  }
+]

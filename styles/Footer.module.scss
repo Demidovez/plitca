@@ -1,0 +1,65 @@
+.footer {
+  background-color: #313336;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  display: inline-block;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  color: #1d1f24;
+  position: relative;
+
+  span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 16px;
+    font-weight: 500;
+    font-size: 21px;
+  }
+}
+
+.label_category {
+  font-size: 0.75rem;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1rem;
+
+  & + ul {
+    padding: 0;
+    padding-right: 10px;
+    list-style: none;
+
+    li {
+      line-height: 0.75rem;
+      padding-top: 0.1875rem;
+      padding-bottom: 0.1875rem;
+
+      a {
+        font-weight: 300;
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+        text-transform: none;
+        color: rgba(255, 255, 255, 0.5);
+        transition: 0.3s;
+
+        &:hover {
+          color: #ffb800;
+        }
+      }
+    }
+  }
+}

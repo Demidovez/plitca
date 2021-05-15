@@ -1,8 +1,9 @@
 import Head from "next/head";
-import style from "../../styles/Layout.module.scss";
-import Header from "../Header/Header";
+// import style from "../styles/Layout.module.scss";
+import Header from "./Header";
+import Footer from "./Footer";
 
-export default function Layout({ children }) {
+export default function Layout({ children, headerNav, footerNav }) {
   return (
     <>
       <Head>
@@ -11,9 +12,9 @@ export default function Layout({ children }) {
           rel="stylesheet"
         />
       </Head>
-      <Header />
+      <Header headerNav={headerNav} />
       <main>{children}</main>
-      <footer></footer>
+      <Footer footerNav={footerNav} />
     </>
   );
 }

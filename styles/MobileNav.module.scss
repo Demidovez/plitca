@@ -1,0 +1,64 @@
+.sidenav {
+  &:global(.rs-sidenav-default) {
+    background-color: transparent;
+  }
+
+  &:global(.rs-sidenav-default.rs-sidenav-collapse-in
+      .rs-dropdown-menu
+      > li
+      > .rs-dropdown-item-content:hover) {
+    background-color: transparent;
+    color: #ffb800;
+  }
+
+  &:global(.rs-sidenav-collapse-in
+      .rs-dropdown-item
+      > .rs-dropdown-item-content) {
+    padding: 11px 20px 11px 20px;
+  }
+}
+
+.navigation {
+  margin-top: 15px;
+
+  & :global(.rs-nav-item:not(.rs-nav-item-disabled) .rs-ripple),
+  & :global(.rs-btn-subtle:not(.rs-btn-disabled) .rs-ripple) {
+    display: none;
+  }
+
+  & :global(.rs-dropdown .rs-dropdown-toggle .rs-dropdown-toggle-caret) {
+    top: 9px;
+  }
+
+  & :global(.rs-nav-item > a),
+  & :global(.rs-dropdown .rs-dropdown-toggle),
+  a {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 0.5rem 10px 0;
+    transition: color 0.2s linear, background-color 0.3s linear;
+    text-decoration: none;
+  }
+
+  & :global(.rs-nav-item) {
+    padding: 0.55rem 0;
+  }
+
+  &
+    :global(.rs-nav-item:not(.rs-nav-item-active):not(.rs-nav-item-disabled)
+      > a:hover),
+  &
+    :global(.rs-nav-item:not(.rs-nav-item-active):not(.rs-nav-item-disabled)
+      > a:focus),
+  & :global(.rs-btn-subtle:hover),
+  & :global(.rs-btn-subtle:focus),
+  & :global(.rs-btn-subtle.rs-btn-focus) {
+    background-color: transparent;
+    text-decoration: none;
+    color: #ffb800;
+  }
+}

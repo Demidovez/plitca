@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "url": "katalog",
+    "label": "Каталог"
+  },
+  {
+    "id": 2,
+    "url": "ukladka-trotuarnoj-plitki",
+    "label": "Укладка тротуарной плитки"
+  },
+  {
+    "id": 3,
+    "url": "demontazh-plitki",
+    "label": "Демонтаж плитки"
+  },
+  {
+    "id": 4,
+    "url": "drenazh-uchastka",
+    "label": "Дренаж участка"
+  },
+  {
+    "id": 5,
+    "url": "otmostka-doma",
+    "label": "Отмостка дома"
+  },
+  {
+    "id": 6,
+    "url": "oplata",
+    "label": "Оплата"
+  },
+  {
+    "id": 7,
+    "url": "optom",
+    "label": "Оптом"
+  },
+  {
+    "id": 8,
+    "url": "dostavka-i-samovyivoz",
+    "label": "Доставка и самовывоз"
+  },
+  {
+    "id": 9,
+    "url": "vozvrat",
+    "label": "Возврат"
+  },
+  {
+    "id": 10,
+    "url": "prajs-list",
+    "label": "Прайс-лист"
+  },
+  {
+    "id": 11,
+    "url": "otzyivy",
+    "label": "Отзывы"
+  },
+  {
+    "id": 12,
+    "url": "liczenzii-i-sertifikaty",
+    "label": "Лицензии и сертификаты"
+  },
+  {
+    "id": 13,
+    "url": "rassrochka-i-kredit",
+    "label": "Рассрочка и кредит"
+  },
+  {
+    "id": 14,
+    "url": "proizvodstvo",
+    "label": "Производство"
+  },
+  {
+    "id": 15,
+    "url": "stati",
+    "label": "Статьи"
+  },
+  {
+    "id": 16,
+    "url": "o-kompanii",
+    "label": "О компании"
+  },
+  {
+    "id": 17,
+    "url": "kontakty",
+    "label": "Контакты"
+  },
+  {
+    "id": 18,
+    "url": "vibropresovannaya",
+    "label": "Вибропрессованная"
+  },
+
+  {
+    "id": 19,
+    "url": "vibrolitaya",
+    "label": "Вибролитая"
+  },
+
+  {
+    "id": 20,
+    "url": "dlya-peshexodnyix-dorozhek",
+    "label": "Для пешеходных дорожек"
+  },
+
+  {
+    "id": 21,
+    "url": "dlya-avtomobilnoj-parkovki",
+    "label": "Для автомобильной парковки"
+  },
+  {
+    "id": 22,
+    "url": "dlya-dachi",
+    "label": "Для дачи"
+  },
+  {
+    "id": 23,
+    "url": "dlya-sada",
+    "label": "Для сада"
+  },
+  {
+    "id": 24,
+    "url": "bordyuryi",
+    "label": "Бордюры"
+  },
+  {
+    "id": 25,
+    "url": "vodostoki",
+    "label": "Водостоки"
+  }
+]

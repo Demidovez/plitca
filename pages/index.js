@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Layout from "../components/Layout/Layout";
 import style from "../styles/Index.module.scss";
 
 export default function Index() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>
           Купить тротуарную плитку в Минске от производителя: 20+ видов плитки -
@@ -17,7 +16,7 @@ export default function Index() {
         <meta name="keywords" content="" />
       </Head>
 
-      <div></div>
-    </Layout>
+      <div>главная</div>
+    </>
   );
 }
