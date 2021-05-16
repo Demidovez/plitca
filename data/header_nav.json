@@ -7,7 +7,7 @@
   {
     "id": 2000,
     "page_id": null,
-    "label": "Услуги",
+    "title": "Услуги",
     "children": [
       {
         "id": 3000,
@@ -30,7 +30,7 @@
   {
     "id": 7000,
     "page_id": null,
-    "label": "Покупателям",
+    "title": "Покупателям",
     "children": [
       {
         "id": 8000,

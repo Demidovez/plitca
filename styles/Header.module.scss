@@ -2,11 +2,7 @@
   background-color: #1d1f24;
   color: #fff;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
 }
 
 .top_header {
@@ -103,6 +99,11 @@
     font-weight: 500;
     font-size: 21px;
   }
+
+  a:hover,
+  a:focus {
+    color: inherit;
+  }
 }
 
 .bottom_header {
@@ -124,6 +125,10 @@
 }
 
 @media (max-width: 991px) {
+  .header {
+    overflow: hidden;
+  }
+
   .top_header {
     padding-top: 0.625rem;
 

@@ -20,14 +20,14 @@ export default function DesktopNav({ headerNav }) {
         headerNav.map((item) => {
           if (item.children.length) {
             return (
-              <Dropdown key={item.id} title={item.label}>
+              <Dropdown key={item.id} title={item.title}>
                 {item.children.map((item) => (
                   <Dropdown.Item
                     key={item.id}
                     componentClass={LinkPage}
                     href={`/${item.url}`}
                   >
-                    {item.label}
+                    {item.title}
                   </Dropdown.Item>
                 ))}
               </Dropdown>
@@ -38,7 +38,7 @@ export default function DesktopNav({ headerNav }) {
                 key={item.id}
                 renderItem={() => (
                   <Link href={`/${item.url}`}>
-                    <a>{item.label}</a>
+                    <a>{item.title}</a>
                   </Link>
                 )}
               />

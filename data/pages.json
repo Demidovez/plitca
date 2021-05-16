@@ -2,129 +2,129 @@
   {
     "id": 1,
     "url": "katalog",
-    "label": "Каталог"
+    "title": "Каталог"
   },
   {
     "id": 2,
     "url": "ukladka-trotuarnoj-plitki",
-    "label": "Укладка тротуарной плитки"
+    "title": "Укладка тротуарной плитки"
   },
   {
     "id": 3,
     "url": "demontazh-plitki",
-    "label": "Демонтаж плитки"
+    "title": "Демонтаж плитки"
   },
   {
     "id": 4,
     "url": "drenazh-uchastka",
-    "label": "Дренаж участка"
+    "title": "Дренаж участка"
   },
   {
     "id": 5,
     "url": "otmostka-doma",
-    "label": "Отмостка дома"
+    "title": "Отмостка дома"
   },
   {
     "id": 6,
     "url": "oplata",
-    "label": "Оплата"
+    "title": "Оплата"
   },
   {
     "id": 7,
     "url": "optom",
-    "label": "Оптом"
+    "title": "Оптом"
   },
   {
     "id": 8,
     "url": "dostavka-i-samovyivoz",
-    "label": "Доставка и самовывоз"
+    "title": "Доставка и самовывоз"
   },
   {
     "id": 9,
     "url": "vozvrat",
-    "label": "Возврат"
+    "title": "Возврат"
   },
   {
     "id": 10,
     "url": "prajs-list",
-    "label": "Прайс-лист"
+    "title": "Прайс-лист"
   },
   {
     "id": 11,
     "url": "otzyivy",
-    "label": "Отзывы"
+    "title": "Отзывы"
   },
   {
     "id": 12,
     "url": "liczenzii-i-sertifikaty",
-    "label": "Лицензии и сертификаты"
+    "title": "Лицензии и сертификаты"
   },
   {
     "id": 13,
     "url": "rassrochka-i-kredit",
-    "label": "Рассрочка и кредит"
+    "title": "Рассрочка и кредит"
   },
   {
     "id": 14,
     "url": "proizvodstvo",
-    "label": "Производство"
+    "title": "Производство"
   },
   {
     "id": 15,
     "url": "stati",
-    "label": "Статьи"
+    "title": "Статьи"
   },
   {
     "id": 16,
     "url": "o-kompanii",
-    "label": "О компании"
+    "title": "О компании"
   },
   {
     "id": 17,
     "url": "kontakty",
-    "label": "Контакты"
+    "title": "Контакты"
   },
   {
     "id": 18,
     "url": "vibropresovannaya",
-    "label": "Вибропрессованная"
+    "title": "Вибропрессованная"
   },
 
   {
     "id": 19,
     "url": "vibrolitaya",
-    "label": "Вибролитая"
+    "title": "Вибролитая"
   },
 
   {
     "id": 20,
     "url": "dlya-peshexodnyix-dorozhek",
-    "label": "Для пешеходных дорожек"
+    "title": "Для пешеходных дорожек"
   },
 
   {
     "id": 21,
     "url": "dlya-avtomobilnoj-parkovki",
-    "label": "Для автомобильной парковки"
+    "title": "Для автомобильной парковки"
   },
   {
     "id": 22,
     "url": "dlya-dachi",
-    "label": "Для дачи"
+    "title": "Для дачи"
   },
   {
     "id": 23,
     "url": "dlya-sada",
-    "label": "Для сада"
+    "title": "Для сада"
   },
   {
     "id": 24,
     "url": "bordyuryi",
-    "label": "Бордюры"
+    "title": "Бордюры"
   },
   {
     "id": 25,
     "url": "vodostoki",
-    "label": "Водостоки"
+    "title": "Водостоки"
   }
 ]

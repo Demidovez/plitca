@@ -35,12 +35,12 @@ export default function Header({ headerNav }) {
       <div className={`${style.header} ${style.top_header}`}>
         <Grid>
           <Row>
-            <Col xs={20} sm={24} md={13}>
+            <Col xs={24} sm={24} md={13}>
               <div className={style.slogan}>
                 Производство, продажа и укладка тротуарной плитки в Минске
               </div>
             </Col>
-            <Col xs={4} sm={24} md={6}>
+            <Col xs={24} sm={24} md={6}>
               <Dropdown
                 title="+375 (29) 11-11-111"
                 className={style.phone}
@@ -72,13 +72,17 @@ export default function Header({ headerNav }) {
       <nav className={`${style.header} ${style.bottom_header}`}>
         <Grid>
           <Row>
-            <Col xs={4} sm={10} md={4}>
+            <Col xs={10} sm={10} md={4}>
               <button className={style.logo}>
-                <img src={logo_bg} alt="logo" />
-                <span>PLITCA.BY</span>
+                <Link href="/">
+                  <a>
+                    <img src={logo_bg} alt="logo" />
+                    <span>PLITCA.BY</span>
+                  </a>
+                </Link>
               </button>
             </Col>
-            <Col xs={10} sm={14} md={20}>
+            <Col xs={14} sm={14} md={20}>
               {isMobileSize ? (
                 <Button
                   onClick={toggleCollapseMenu}

@@ -22,26 +22,26 @@ MyApp.getInitialProps = async (appContext) => {
       return {
         ...item,
         children: item.children.map((item) => {
-          const { url, label } = allPages.find(
+          const { url, title } = allPages.find(
             (page) => page.id === item.page_id
-          ) || { url: "/", label: "Главная" };
+          ) || { url: "/", title: "Главная" };
 
           return {
             ...item,
             url,
-            label,
+            title,
           };
         }),
       };
     } else {
-      const { url, label } = allPages.find(
+      const { url, title } = allPages.find(
         (page) => page.id === item.page_id
-      ) || { url: "/", label: "Главная" };
+      ) || { url: "/", title: "Главная" };
 
       return {
         ...item,
         url,
-        label,
+        title,
       };
     }
   });
@@ -49,14 +49,14 @@ MyApp.getInitialProps = async (appContext) => {
   const footerNav = footerNavItems.map((item) => ({
     ...item,
     children: item.children.map((item) => {
-      const { url, label } = allPages.find(
+      const { url, title } = allPages.find(
         (page) => page.id === item.page_id
-      ) || { url: "/", label: "Главная" };
+      ) || { url: "/", title: "Главная" };
 
       return {
         ...item,
         url,
-        label,
+        title,
       };
     }),
   }));

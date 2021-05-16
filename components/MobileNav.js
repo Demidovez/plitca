@@ -41,7 +41,7 @@ const Navigation = forwardRef(({ ...props }, ref) => {
                   return (
                     <Dropdown
                       key={item.id}
-                      title={item.label}
+                      title={item.title}
                       eventKey={item.id}
                       onClick={() => handleClickDropdown(item.id)}
                     >
@@ -52,7 +52,7 @@ const Navigation = forwardRef(({ ...props }, ref) => {
                           href={`/${item.url}`}
                           onSelect={() => setOpenKeyDropdown([])}
                         >
-                          {item.label}
+                          {item.title}
                         </Dropdown.Item>
                       ))}
                     </Dropdown>
@@ -63,7 +63,7 @@ const Navigation = forwardRef(({ ...props }, ref) => {
                       key={item.id}
                       renderItem={() => (
                         <Link href={`/${item.url}`}>
-                          <a>{item.label}</a>
+                          <a>{item.title}</a>
                         </Link>
                       )}
                     />

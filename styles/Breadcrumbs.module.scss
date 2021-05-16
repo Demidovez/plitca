@@ -1,0 +1,36 @@
+.breadcrumbs {
+  border-bottom: 0.0625rem solid #e5e5e5;
+  margin-bottom: 3.125rem;
+}
+
+.breadcrumbs ul {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  color: rgba(29, 31, 36, 0.5);
+  padding: 0.875rem 0;
+  margin-bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  border-radius: 0.25rem;
+
+  li,
+  a {
+    color: #6c757d;
+  }
+
+  li + li {
+    padding-left: 0.5rem;
+
+    &::before {
+      display: inline-block;
+      padding-right: 0.5rem;
+      color: #6c757d;
+      content: "—";
+    }
+  }
+}

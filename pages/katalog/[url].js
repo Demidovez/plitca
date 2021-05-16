@@ -1,8 +1,14 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 // import style from "../styles/Index.module.scss";
+import products from "../../data/products.json";
 
-export default function Page() {
+export default function Product({ product }) {
+  const router = useRouter();
+
+  if (!product) return <div></div>;
+
   return (
     <>
       <Head>
@@ -14,11 +20,25 @@ export default function Page() {
         <meta name="keywords" content="" />
       </Head>
 
-      <Link href="/stati">
-        <a>stati</a>
-      </Link>
-      <br />
-      <a href="/stati">stati</a>
+      <div>Каталог/{router.query.url}</div>
+      <div>Товар: {product.title}</div>
     </>
   );
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: products.map(({ url }) => ({ params: { url } })),
+    fallback: false,
+  };
+}
+
+export async function getStaticProps(ctx) {
+  const product = products.find((product) => product.url === ctx.params.url);
+
+  return {
+    props: {
+      product,
+    },
+  };
 }

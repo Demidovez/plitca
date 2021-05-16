@@ -13,23 +13,34 @@ export default function Footer({ footerNav }) {
   return (
     <footer className={style.footer}>
       <Grid>
-        <Row>
-          <Col xs={8} sm={8} md={8}>
+        <Row className={style.nav_wrapper}>
+          <Col xs={24} sm={24} md={6} lg={6}>
             <button className={style.logo}>
-              <img src={logo_bg} alt="logo" />
-              <span>PLITCA.BY</span>
+              <Link href="/">
+                <a>
+                  <img src={logo_bg} alt="logo" />
+                  <span>PLITCA.BY</span>
+                </a>
+              </Link>
             </button>
             <p>ООО "ЫОВЫФДФЫВФЫВФЫВФЫ" © 2010-2021</p>
             <p>Производство, продажа и укладка тротуарной плитки в Минске</p>
           </Col>
-          {footerNav.map((category) => (
-            <Col xs={4} sm={4} md={4} key={category.id}>
-              <p className={style.label_category}>{category.label}</p>
+          <Col mdHidden smHidden xsHidden lg={2}></Col>
+          {footerNav.map((category, index) => (
+            <Col
+              xs={12}
+              sm={12}
+              md={index === 0 ? 6 : 4}
+              lg={4}
+              key={category.id}
+            >
+              <p className={style.title_category}>{category.title}</p>
               <ul>
                 {category.children.map((page) => (
                   <li key={page.id}>
                     <Link href={`/${page.url}`}>
-                      <a>{page.label}</a>
+                      <a>{page.title}</a>
                     </Link>
                   </li>
                 ))}
@@ -38,19 +49,17 @@ export default function Footer({ footerNav }) {
           ))}
         </Row>
 
-        <Row>
-          <Col xs={8} sm={8} md={8}></Col>
-          <Col xs={8} sm={8} md={8}>
+        <Row className={style.contacts_wrapper}>
+          <Col smHidden xsHidden md={6} lg={8}></Col>
+          <Col xs={24} sm={12} md={6} lg={8} className={style.phone}>
             <a href="tel:+375291111111">+375 (29) 11-11-111</a>
           </Col>
-          <Col xs={4} sm={4} md={4}>
+          <Col xsHidden sm={12} mdHidden lgHidden></Col>
+          <Col xs={24} sm={12} md={4} className={style.time}>
             Пн-Сб: 08:00-18:00
           </Col>
-          <Col xs={4} sm={4} md={4}>
-            <button
-              className={style.order_call}
-              onClick={toggleShowModalOrderCall}
-            >
+          <Col xs={24} sm={12} md={8} lg={4} className={style.order_call}>
+            <button onClick={toggleShowModalOrderCall}>
               <Icon icon="phone" /> ЗАКАЗАТЬ ЗВОНОК
             </button>
           </Col>
