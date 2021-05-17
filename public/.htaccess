@@ -1,8 +1,15 @@
 DirectorySlash Off 
 RewriteEngine on
+RewriteBase /
+
+RewriteRule ^(.*)/$ http://cp00334.tmweb.ru/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[^?]+//  [OR]
+RewriteCond %{HTTP_HOST}   ^www\.    [NC]
+RewriteRule .* http://cp00334.tmweb.ru/$0 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^\S+\s([^?\s]*?)(/index)?\.html
+RewriteRule ^ http://cp00334.tmweb.ru%1 [R=301,L,NE]
+
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)  /$1.html [L] 
-RewriteCond %{THE_REQUEST} \s/+(.*?/)?(?:index)?(.*?)\.(html|php)[\s?/] [NC] 
-RewriteRule ^(.*)  /%1%2 [R=302,L]
-RewriteCond %{REQUEST_URI} !(/$|\.) [NC]
-RewriteRule ^  %{REQUEST_URI}/ [R=302,L] 
+RewriteRule ^(.*)  /$1.html [L]

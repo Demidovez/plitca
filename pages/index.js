@@ -1,5 +1,5 @@
-import Head from "next/head";
 import style from "../styles/Index.module.scss";
+import Head from "next/head";
 
 export default function Index() {
   return (
@@ -15,8 +15,6 @@ export default function Index() {
         />
         <meta name="keywords" content="" />
       </Head>
-
-      <div>главная</div>
     </>
   );
 }

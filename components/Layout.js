@@ -3,8 +3,9 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 import Breadcrumbs from "./Breadcrumbs";
+import SimpleBanner from "./SimpleBanner";
 
-export default function Layout({ children, headerNav, footerNav }) {
+export default function Layout({ children, headerNav, footerNav, pages }) {
   return (
     <>
       <Head>
@@ -14,6 +15,7 @@ export default function Layout({ children, headerNav, footerNav }) {
         />
       </Head>
       <Header headerNav={headerNav} />
+      <SimpleBanner pages={pages} />
       <Breadcrumbs />
       <main>{children}</main>
       <Footer footerNav={footerNav} />

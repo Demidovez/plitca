@@ -5,10 +5,11 @@ import Layout from "../components/Layout";
 import allPages from "../data/pages.json";
 import headerNavItems from "../data/header_nav.json";
 import footerNavItems from "../data/footer_nav.json";
+import React from "react";
 
-function MyApp({ Component, pageProps, headerNav, footerNav }) {
+function MyApp({ Component, pageProps, headerNav, footerNav, allPages }) {
   return (
-    <Layout headerNav={headerNav} footerNav={footerNav}>
+    <Layout headerNav={headerNav} footerNav={footerNav} pages={allPages}>
       <Component {...pageProps} />
     </Layout>
   );
@@ -61,7 +62,7 @@ MyApp.getInitialProps = async (appContext) => {
     }),
   }));
 
-  return { ...appProps, headerNav, footerNav };
+  return { ...appProps, headerNav, footerNav, allPages };
 };
 
 export default MyApp;

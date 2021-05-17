@@ -44,7 +44,11 @@ export default function Breadcrumbs() {
   };
 
   return (
-    <div className={style.breadcrumbs}>
+    <div
+      className={`${style.breadcrumbs} ${
+        breadcrumbUrls.length > 1 ? "show" : "hide"
+      } breadcrumbs`}
+    >
       {breadcrumbUrls.length > 1 ? (
         <Grid>
           <ul>
