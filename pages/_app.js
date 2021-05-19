@@ -5,13 +5,33 @@ import Layout from "../components/Layout";
 import allPages from "../data/pages.json";
 import headerNavItems from "../data/header_nav.json";
 import footerNavItems from "../data/footer_nav.json";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
+import sal from "sal.js";
+import "sal.js/dist/sal.css";
+
+const anim = sal();
 
 function MyApp({ Component, pageProps, headerNav, footerNav, allPages }) {
+  const { asPath, isReady } = useRouter();
+  const router = useRouter();
+  const [classWrapper, setClassWrapper] = useState("");
+
+  // useEffect(() => {
+  //   sal();
+  // }, []);
+
+  useEffect(() => {
+    anim.update();
+  }, [asPath]);
+
   return (
-    <Layout headerNav={headerNav} footerNav={footerNav} pages={allPages}>
-      <Component {...pageProps} />
-    </Layout>
+    <div className={`${classWrapper}`}>
+      <Layout headerNav={headerNav} footerNav={footerNav} pages={allPages}>
+        <Component {...pageProps} />
+      </Layout>
+    </div>
   );
 }
 

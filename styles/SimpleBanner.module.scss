@@ -1,2 +1,41 @@
 .simple_banner {
+  color: rgba(255, 255, 255, 0.6);
+  height: 33.125rem;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+    background-color: #1d1f24;
+    opacity: 0.85;
+  }
+}
+
+.container {
+  position: relative;
+  padding: 0.9375rem;
+  width: 100%;
+
+  h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.875rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
 }

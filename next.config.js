@@ -4,7 +4,7 @@ module.exports = {
   },
   webpack(config) {
     config.module.rules.push({
-      test: [/\.svg$/, /\.woff$/],
+      test: [/\.svg$/, /\.woff$/, /\.jpg$/],
       loader: "file-loader",
       options: {
         name: "[name].[hash:8].[ext]",
