@@ -18,6 +18,42 @@ export default function Layout({ children, headerNav, footerNav, pages }) {
       <SimpleBanner pages={pages} />
       <Breadcrumbs />
       <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
+      <main>{children}</main>
       <Footer footerNav={footerNav} />
     </>
   );

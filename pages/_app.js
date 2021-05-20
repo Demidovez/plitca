@@ -8,30 +8,24 @@ import footerNavItems from "../data/footer_nav.json";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-import sal from "sal.js";
-import "sal.js/dist/sal.css";
-
-const anim = sal();
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps, headerNav, footerNav, allPages }) {
-  const { asPath, isReady } = useRouter();
-  const router = useRouter();
-  const [classWrapper, setClassWrapper] = useState("");
-
-  // useEffect(() => {
-  //   sal();
-  // }, []);
+  const { asPath } = useRouter();
 
   useEffect(() => {
-    anim.update();
+    AOS.init({ duration: 1100, once: false });
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
   }, [asPath]);
 
   return (
-    <div className={`${classWrapper}`}>
-      <Layout headerNav={headerNav} footerNav={footerNav} pages={allPages}>
-        <Component {...pageProps} />
-      </Layout>
-    </div>
+    <Layout headerNav={headerNav} footerNav={footerNav} pages={allPages}>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

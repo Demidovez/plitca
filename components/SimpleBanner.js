@@ -21,17 +21,11 @@ export default function SimpleBanner({ pages }) {
           <Grid>
             <Row>
               <Col xs={16} sm={16} md={16} lg={16}>
-                <h1
-                  data-sal="fade"
-                  style={{ "--sal-duration": "1.1s", "--sal-delay": "0.1s" }}
-                >
+                <h1 data-aos="fade-in" data-aos-delay="100">
                   {page.bannerTitle}
                 </h1>
                 {page.bannerDesc && (
-                  <p
-                    data-sal="fade"
-                    style={{ "--sal-duration": "1.1s", "--sal-delay": "0.4s" }}
-                  >
+                  <p data-aos="fade-in" data-aos-delay="400">
                     {page.bannerDesc}
                   </p>
                 )}
